@@ -10,8 +10,7 @@ namespace WindowsFormsApp1
     {
         private double dt;
         private double T;
-        private double prev_hot;
-        private double prev_cold;
+        private double prev;
 
         public APBlock(double dt, double T)
         {
@@ -21,8 +20,8 @@ namespace WindowsFormsApp1
 
         public override double Calc(double x)
         {
-            var y = (dt * x + T * prev_hot) / (T + dt);
-            prev_hot = y;    
+            var y = (dt * x + T * prev) / (T + dt);
+            prev = y;    
             return y;
         }
     }

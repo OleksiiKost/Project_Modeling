@@ -63,9 +63,9 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RR {
+        internal static System.Drawing.Bitmap Heater {
             get {
-                object obj = ResourceManager.GetObject("RR", resourceCulture);
+                object obj = ResourceManager.GetObject("Heater", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -76,6 +76,16 @@ namespace WindowsFormsApp1.Properties {
         internal static System.Drawing.Bitmap RRR {
             get {
                 object obj = ResourceManager.GetObject("RRR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RRR1 {
+            get {
+                object obj = ResourceManager.GetObject("RRR1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
