@@ -1,0 +1,15 @@
+G:\3 КУРС\2 Семестр\Моделювання та оптимізація систем управління\ProjectOptimization\bin\Debug\net6.0\ProjectOptimization.exe
+G:\3 КУРС\2 Семестр\Моделювання та оптимізація систем управління\ProjectOptimization\bin\Debug\net6.0\ProjectOptimization.deps.json
+G:\3 КУРС\2 Семестр\Моделювання та оптимізація систем управління\ProjectOptimization\bin\Debug\net6.0\ProjectOptimization.runtimeconfig.json
+G:\3 КУРС\2 Семестр\Моделювання та оптимізація систем управління\ProjectOptimization\bin\Debug\net6.0\ProjectOptimization.dll
+G:\3 КУРС\2 Семестр\Моделювання та оптимізація систем управління\ProjectOptimization\bin\Debug\net6.0\ref\ProjectOptimization.dll
+G:\3 КУРС\2 Семестр\Моделювання та оптимізація систем управління\ProjectOptimization\bin\Debug\net6.0\ProjectOptimization.pdb
+G:\3 КУРС\2 Семестр\Моделювання та оптимізація систем управління\ProjectOptimization\obj\Debug\net6.0\ProjectOptimization.csproj.AssemblyReference.cache
+G:\3 КУРС\2 Семестр\Моделювання та оптимізація систем управління\ProjectOptimization\obj\Debug\net6.0\ProjectOptimization.GeneratedMSBuildEditorConfig.editorconfig
+G:\3 КУРС\2 Семестр\Моделювання та оптимізація систем управління\ProjectOptimization\obj\Debug\net6.0\ProjectOptimization.AssemblyInfoInputs.cache
+G:\3 КУРС\2 Семестр\Моделювання та оптимізація систем управління\ProjectOptimization\obj\Debug\net6.0\ProjectOptimization.AssemblyInfo.cs
+G:\3 КУРС\2 Семестр\Моделювання та оптимізація систем управління\ProjectOptimization\obj\Debug\net6.0\ProjectOptimization.csproj.CoreCompileInputs.cache
+G:\3 КУРС\2 Семестр\Моделювання та оптимізація систем управління\ProjectOptimization\obj\Debug\net6.0\ProjectOptimization.dll
+G:\3 КУРС\2 Семестр\Моделювання та оптимізація систем управління\ProjectOptimization\obj\Debug\net6.0\ref\ProjectOptimization.dll
+G:\3 КУРС\2 Семестр\Моделювання та оптимізація систем управління\ProjectOptimization\obj\Debug\net6.0\ProjectOptimization.pdb
+G:\3 КУРС\2 Семестр\Моделювання та оптимізація систем управління\ProjectOptimization\obj\Debug\net6.0\ProjectOptimization.genruntimeconfig.cache
