@@ -9,8 +9,9 @@ namespace WindowsFormsApp1
     public class ControlSystem
     {
         private double dt;
-        private PIDBlock PID;
+        public PIDBlock PID;
         private HeatExchanger Heat;
+        public double e;
 
         private LimitBlock limBlock_T_hot = new LimitBlock(60, 120);
         private LimitBlock limBlock_T_cold = new LimitBlock(5, 20);
@@ -47,7 +48,7 @@ namespace WindowsFormsApp1
         public void Calc()
         {
             Output = Heat.CalcCold(g_hot, t_hot_in, t_cold_in, g_cold);
-            var e = SetPoint - Output;
+            e = SetPoint - Output;
             var u = PID.Calc(e);
             if (!ManualMode)
             {
@@ -60,5 +61,4 @@ namespace WindowsFormsApp1
             Time += dt;
         }
     }
-
 }

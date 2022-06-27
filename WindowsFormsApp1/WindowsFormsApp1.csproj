@@ -56,6 +56,8 @@
     <Compile Include="Blocks\DiffBlock.cs" />
     <Compile Include="Blocks\LimitBlock.cs" />
     <Compile Include="ControlSystem.cs" />
+    <Compile Include="Criteria.cs" />
+    <Compile Include="GaussSeidel.cs" />
     <Compile Include="HeatExchanger.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>

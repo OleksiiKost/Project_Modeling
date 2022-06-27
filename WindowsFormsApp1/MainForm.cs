@@ -251,5 +251,36 @@ namespace WindowsFormsApp1
             btn_G_hot_in_Down.Enabled = system.ManualMode;
             btn_G_hot_in_Up.Enabled = system.ManualMode;
         }
+
+
+        private void ShowOptimization(double dt, double MaxTime,  double[] variables, int series)
+        {
+            ControlSystem sys = new ControlSystem(dt);
+            sys.PID.K = variables[0];
+            sys.PID.Ti = variables[1];
+            sys.PID.Td = variables[2];
+            sys.Time = 0;
+            var StepCount = (int)(MaxTime / dt);
+            for (int i = 0; i < StepCount; i++)
+            {
+                sys.Calc();
+                chMainPlot.Series[series].Points.AddXY(sys.Time, sys.Output);
+                sys.Time = sys.Time + dt;
+            }
+        }
+        private void btnOptimization_Click(object sender, EventArgs e)
+        {
+            var gsm = new GaussSeidel();
+            double Ki = 10, Ti = 50, Td = 3;
+            double[] startpoint = { 10, 50, 3 }; 
+
+            var I1 = Criteria.I2Criteria(Ki,Ti,Td);
+            ShowOptimization(1, 100, startpoint, 0);
+
+            var optimizeres = gsm.GaussMin(Criteria.I2Criteria, Ki, Ti, Td);
+            ShowOptimization(1, 100,  optimizeres, 1);
+
+            var I2 = Criteria.I2Criteria(optimizeres[0], optimizeres[1], optimizeres[2]);
+        }
     }
 }

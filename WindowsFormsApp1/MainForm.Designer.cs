@@ -73,6 +73,7 @@
             this.tbTd = new System.Windows.Forms.TextBox();
             this.tbTi = new System.Windows.Forms.TextBox();
             this.btnManual = new System.Windows.Forms.Button();
+            this.btnOptimization = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chMainPlot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -140,11 +141,11 @@
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.Legend = "Legend1";
-            series1.Name = "T_cold_out";
+            series1.Name = "First";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series2.Legend = "Legend1";
-            series2.Name = "G_hot_in";
+            series2.Name = "Second";
             this.chMainPlot.Series.Add(series1);
             this.chMainPlot.Series.Add(series2);
             this.chMainPlot.Size = new System.Drawing.Size(1295, 368);
@@ -485,6 +486,17 @@
             this.btnManual.UseVisualStyleBackColor = true;
             this.btnManual.Click += new System.EventHandler(this.btnManual_Click);
             // 
+            // btnOptimization
+            // 
+            this.btnOptimization.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnOptimization.Location = new System.Drawing.Point(1143, 137);
+            this.btnOptimization.Name = "btnOptimization";
+            this.btnOptimization.Size = new System.Drawing.Size(140, 80);
+            this.btnOptimization.TabIndex = 45;
+            this.btnOptimization.Text = "Optimization";
+            this.btnOptimization.UseVisualStyleBackColor = true;
+            this.btnOptimization.Click += new System.EventHandler(this.btnOptimization_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -492,6 +504,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1323, 753);
+            this.Controls.Add(this.btnOptimization);
             this.Controls.Add(this.btnManual);
             this.Controls.Add(this.tbTi);
             this.Controls.Add(this.label10);
@@ -582,6 +595,7 @@
         private System.Windows.Forms.TextBox tbTd;
         private System.Windows.Forms.TextBox tbTi;
         private System.Windows.Forms.Button btnManual;
+        private System.Windows.Forms.Button btnOptimization;
     }
 }
 
